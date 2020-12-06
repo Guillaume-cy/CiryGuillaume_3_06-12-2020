@@ -1,3 +1,5 @@
+#ignore dossier dart sass
 dart-sass
 
+#ignore la ligne de commande pour lancer la compilation auto du sass
 assets-dev.bat
