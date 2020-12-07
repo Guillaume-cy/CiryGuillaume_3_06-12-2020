@@ -6,24 +6,57 @@
 }
 body {
   max-width: 480px;
+  font-family: "roboto";
+  box-sizing: content-box;
+}
+
+.container {
+  margin: auto;
 }
 
 p {
-  color: #99E2D0;
-  font-size: 20px;
-}
-
-h1 {
-  color: #FF79DA;
-  font-size: 50px;
+  margin: 0px;
+  text-align: center;
 }
 
 h2 {
-  color: green;
-  font-size: 120px;
+  margin: 0px;
+  text-align: center;
+  padding-top: 20px;
 }
 
-h3 {
+/* Header */
+.logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-left: 25%;
+}
+
+/* Loc */
+.IconeLoc {
+  padding-right: 5%;
+  padding-top: 15px;
+}
+
+.Ville {
+  padding-top: 15px;
+}
+
+.Localisation {
+  display: flex;
+  justify-content: center;
+  background-color: #b9b9b9;
+  height: 50px;
+}
+
+.Reservation {
+  background-color: #e2e2e2;
+  height: 200px;
+}
+
+h1 {
   color: #9356DC;
 }
 
