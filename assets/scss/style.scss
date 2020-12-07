@@ -1,12 +1,31 @@
+
+@font-face { 
+    font-family: "roboto" ; 
+    src: url("public/fonts/roboto");
+    font-family: "shrikhand" ; 
+    src: url("public/fonts/shikhand");
+}
+
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+body{
+    max-width: 480px;
+}
+
+
 p{
-    color:yellow;
+
+    color:$couleur-vert-clair;
     font-size: 20px;
 }
 
 
 h1{
-    color: red;
+    color: $couleur-rose;
     font-size: 50px;
+    
 }
 
 h2{
@@ -15,5 +34,5 @@ h2{
 }
 
 h3{
-    color: blue;
+    color: $couleur-violet;
   }

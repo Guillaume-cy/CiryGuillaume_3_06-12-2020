@@ -1,10 +1,20 @@
+@font-face {
+  font-family: "roboto";
+  src: url("public/fonts/roboto");
+  font-family: "shrikhand";
+  src: url("public/fonts/shikhand");
+}
+body {
+  max-width: 480px;
+}
+
 p {
-  color: yellow;
+  color: #99E2D0;
   font-size: 20px;
 }
 
 h1 {
-  color: red;
+  color: #FF79DA;
   font-size: 50px;
 }
 
@@ -14,7 +24,7 @@ h2 {
 }
 
 h3 {
-  color: blue;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
