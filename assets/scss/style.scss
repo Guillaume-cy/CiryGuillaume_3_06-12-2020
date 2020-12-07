@@ -157,44 +157,58 @@
             font-weight: bold;
             padding-top: 10px;
             padding-left: 15px;
+            display: block;
             
         }
 
+        .IconeCoeur{
+            display: block;
+            float: right;
+            padding-right: 20px;
+            padding-top: 20px;
+                & :hover{
+                    background-color: $couleur-violet;
+                }
+              
+           
+        }
+
+        
+
         .ImageTexte{
             padding-bottom: 20px;
-            padding-top: 20px;
+            padding-top: 10px;
             padding-left: 15px;
         }
     
     /*Footer*/
 
-        .Footer{
-            background-color:$couleur-gris-clair;
-                    background: darken($couleur-gris-clair, $amount: 80%);
+    .Footer{
+        background-color:$couleur-gris-clair;
+                background: darken($couleur-gris-clair, $amount: 80%);
+        color: white;
+        padding-left: 15px;
+        a{
             color: white;
-            padding-left: 15px;
-            a{
-                color: white;
-            }
         }
+    }
 
-        .Icone-Texte-Footer{
-            display: flex;
-            color: white;
-            padding-bottom: 10px;
-        }
+    .Icone-Texte-Footer{
+        display: flex;
+        color: white;
+        padding-bottom: 10px;
+    }
 
-        .IconeFooter{
-            padding-right: 10px;
-            width: 20px;
-        }
-        .TexteFooter{
-            text-decoration: none;
-            color: white;
-        }
+    .IconeFooter{
+        padding-right: 10px;
+        width: 20px;
+    }
+    .TexteFooter{
+        text-decoration: none;
+        color: white;
+    }
 
-        .LienFooter{
-            padding-bottom: 10px;
-            color: white;
-        }
-        
+    .LienFooter{
+        padding-bottom: 10px;
+        color: white;
+    }

@@ -153,11 +153,22 @@ h4 {
   font-weight: bold;
   padding-top: 10px;
   padding-left: 15px;
+  display: block;
+}
+
+.IconeCoeur {
+  display: block;
+  float: right;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.IconeCoeur :hover {
+  background-color: #9356DC;
 }
 
 .ImageTexte {
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 15px;
 }
 
