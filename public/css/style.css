@@ -224,7 +224,7 @@ h5 {
   color: white;
 }
 
-/* Page Francaise*/
+/* Page des restaurants*/
 .ImageEnTete {
   flex-wrap: wrap;
   object-fit: cover;
@@ -264,6 +264,7 @@ h5 {
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 1px 4px gray;
+  padding-bottom: 15px;
 }
 
 .BoutonCommander {

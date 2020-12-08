@@ -234,7 +234,7 @@
     }
 
 
-    /* Page Francaise*/
+    /* Page des restaurants*/
 
     .ImageEnTete{
         flex-wrap: wrap;
@@ -277,6 +277,7 @@
         border-radius: 10px;
         background-color: white;
         @include Shadow;
+        padding-bottom: 15px;
         
    }
 
