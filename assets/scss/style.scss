@@ -31,6 +31,13 @@
         font-family: "roboto";
     }
 
+    h1{
+        margin: 0px; 
+        padding-top: 20px;
+        padding-left: 15px;
+        font-family: "shrikhand";
+    }
+
     h2{
         margin: 0px; 
         padding-top: 20px;
@@ -57,6 +64,19 @@
         font-weight: bold;
         
     }
+
+    h5{
+        margin: 0px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-left: 15px;
+        font-family: "roboto";
+        font-weight: normal;
+        font-size: 24px;
+            @include H5Hover;
+            
+    }
+
     /* Header */
 
         .logo {
@@ -212,3 +232,57 @@
         padding-bottom: 10px;
         color: white;
     }
+
+
+    /* Page Francaise*/
+
+    .ImageEnTete{
+        flex-wrap: wrap;
+        object-fit: cover;
+        justify-self: center;
+        width: 100%;
+        height: 300px;
+    }
+
+    .ChoixMenu{
+        background-color: $couleur-gris-clair;
+        padding-bottom: 100px;
+        border-radius: 30px 30px 0px 0px;
+    }
+
+
+    .IconeCoeurMenu{
+        display: block;
+            float: right;
+            padding-right: 20px;
+                & :hover{
+                    background-color: $couleur-violet;
+                }
+    }
+
+   .PrixMenu{
+        display: block;
+        float: right;
+        padding-right: 20px;
+        font-weight: bold;
+        
+   }
+
+   .CarteMenu{
+        width: 93%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        border: 1px $couleur-gris-clair solid;
+        border-radius: 10px;
+        background-color: white;
+        @include Shadow;
+        
+   }
+
+   .BoutonCommander{
+    @include Bouton;
+    @include Shadow;
+    background-color: #C84FC2;
+    margin-top: 50px;
+   }
