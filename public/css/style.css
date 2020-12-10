@@ -5,7 +5,6 @@
   src: url("public/fonts/shrikhand");
 }
 body {
-  max-width: 480px;
   font-family: "roboto";
   box-sizing: content-box;
 }
@@ -17,6 +16,7 @@ a {
 
 .container {
   margin: auto;
+  max-width: 480px;
 }
 
 p {
@@ -225,6 +225,11 @@ h5 {
 }
 
 /* Page des restaurants*/
+.EnTetePhoto {
+  display: block;
+  margin: auto;
+}
+
 .ImageEnTete {
   flex-wrap: wrap;
   object-fit: cover;
@@ -279,6 +284,22 @@ h5 {
   box-shadow: 1px 1px 4px gray;
   background-color: #C84FC2;
   margin-top: 50px;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media all and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media all and (max-width: 2560px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
