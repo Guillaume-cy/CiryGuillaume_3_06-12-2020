@@ -57,6 +57,7 @@ h4 {
   font-family: "shrikhand";
   font-size: 24px;
   font-weight: bold;
+  padding-left: 15px;
 }
 
 h5 {
@@ -117,6 +118,11 @@ h5 {
   width: 40%;
   box-shadow: 1px 1px 4px gray;
   background-color: #C84FC2;
+  height: 55px;
+}
+
+.TexteBoutonRecherche {
+  font-size: 15px;
 }
 
 .CarteFonc {
@@ -197,7 +203,6 @@ h5 {
   background-color: #F9F9F9;
   background: #2d2d2d;
   color: white;
-  padding-left: 15px;
 }
 .Footer a {
   color: white;
@@ -207,6 +212,7 @@ h5 {
   display: flex;
   color: white;
   padding-bottom: 10px;
+  padding-left: 15px;
 }
 
 .IconeFooter {
@@ -222,6 +228,7 @@ h5 {
 .LienFooter {
   padding-bottom: 10px;
   color: white;
+  padding-left: 15px;
 }
 
 /* Page des restaurants*/
@@ -284,21 +291,39 @@ h5 {
   box-shadow: 1px 1px 4px gray;
   background-color: #C84FC2;
   margin-top: 50px;
+  height: 55px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 2560px) {
   .container {
-    max-width: 768px;
+    max-width: 1200px;
+  }
+
+  .Bouton {
+    margin-top: 10px;
   }
 }
 @media all and (max-width: 1440px) {
   .container {
     max-width: 1200px;
   }
+
+  .Bouton {
+    margin-top: 10px;
+  }
 }
-@media all and (max-width: 2560px) {
+@media all and (max-width: 768px) {
   .container {
-    max-width: 1200px;
+    max-width: 768px;
+  }
+
+  .Bouton {
+    margin-top: 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  .container {
+    max-width: 480px;
   }
 }
 
