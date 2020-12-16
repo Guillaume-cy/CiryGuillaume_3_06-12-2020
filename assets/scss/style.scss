@@ -221,11 +221,12 @@
         
         .IconeCoeur{
             display: block;
+            color: black;
             float: right;
             padding-right: 20px;
             padding-top: 20px;
                 & :hover{
-                    background-color: $couleur-violet;
+                    color: $couleur-violet;
                 }
               
            
@@ -412,11 +413,11 @@
 
 
    .BoutonCommander{
-    @include Bouton;
-    @include Shadow;
-    background-color: #C84FC2;
-    margin-top: 50px;
-    height: 55px
+        @include Bouton;
+        @include Shadow;
+        background-color: #C84FC2;
+        margin-top: 50px;
+        height: 55px
    }
     
 
