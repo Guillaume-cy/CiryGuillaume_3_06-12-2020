@@ -347,42 +347,86 @@ h5 {
   padding-right: 20px;
 }
 .IconeCoeurMenu :hover {
-  background-color: #9356DC;
+  color: #9356DC;
 }
 
-.TitreImage {
-  width: 70%;
+.TitreMenu {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 15px;
+  display: flex;
+}
+
+.MenuTexte {
+  grid-column: 1;
+  grid-row: 2;
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 .PrixMenu {
-  display: block;
-  float: right;
-  padding-right: 50px;
   font-weight: bold;
+  grid-row: 2;
+  padding-left: 65%;
 }
 
 .CarteMenu {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   width: 93%;
-  display: block;
   margin: auto;
   margin-top: 20px;
   border: 1px #F9F9F9 solid;
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 1px 4px gray;
-  padding-bottom: 15px;
+  cursor: pointer;
 }
-
-.IconeCheck {
+.CarteMenu .IconeCheck {
   display: flex;
   align-items: center;
-  float: right;
-  color: #99E2D0;
-  background-color: green;
-  height: 100%;
-  width: 20%;
+  justify-content: center;
+  border-radius: 10px;
+  opacity: 0;
+  color: white;
+  background-color: #99E2D0;
+  width: 100%;
+  grid-row: 1/span 2;
+  grid-column: 3;
+  -webkit-animation: tourne 5s;
+  -moz-animation: tourne 5s;
+  animation: tourne 5s;
+}
+.CarteMenu .IconeCheck:hover {
+  opacity: 1;
 }
 
+@-webkit-keyframes tourne {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes tourne {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes tourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .BoutonCommander {
   display: block;
   margin: auto;
