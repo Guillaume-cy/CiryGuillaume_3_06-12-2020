@@ -385,7 +385,8 @@ h5 {
 .PrixMenu {
   font-weight: bold;
   grid-row: 2;
-  padding-left: 85%;
+  padding-left: 80%;
+  text-overflow: ellipsis;
 }
 
 .CarteMenu {
@@ -602,6 +603,11 @@ h5 {
 @media all and (max-width: 480px) {
   .container {
     max-width: 480px;
+  }
+
+  .PrixMenu {
+    padding-left: 65%;
+    text-overflow: ellipsis;
   }
 
   .IconeArrow {
