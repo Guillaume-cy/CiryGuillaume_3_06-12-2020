@@ -1,9 +1,9 @@
 
 @font-face { 
     font-family: "roboto" ; 
-    src: url("public/fonts/roboto");
+    src: url("/public/fonts/roboto/roboto-regular.ttf");
     font-family: "shrikhand" ; 
-    src: url("public/fonts/shrikhand");
+    src: url("/public/fonts/shrikhand/shrikhand-regular.ttf");
 }
 
 @import '_mixins.scss';
@@ -39,6 +39,7 @@
         font-family: "shrikhand";
     }
 
+    
     h2{
         margin: 0px; 
         padding-top: 20px;
@@ -225,8 +226,12 @@
             float: right;
             padding-right: 20px;
             padding-top: 20px;
+            
                 & :hover{
-                    color: $couleur-violet;
+                    background-color: $couleur-violet;
+                    
+
+
                 }
               
            
@@ -322,10 +327,7 @@
         position: relative;
         top: -50px;
         
-        animation: fadein 4s;
-        -moz-animation: fadein 4s; /* Firefox */
-        -webkit-animation: fadein 4s; /* Safari et Chrome */
-        -o-animation: fadein 4s; /* Opera */
+       
 
     }
 
@@ -353,13 +355,31 @@
             opacity:1;
         }
     }
-    @-o-keyframes fadein { /* sur Opera */
-        from {
-            opacity:0;
-        }
-        to {
-            opacity: 1;
-        }
+   
+    .TitreCarte__CarteEntrees{
+        text-transform: uppercase;
+        animation: fadein 5s;
+        -moz-animation: fadein 5s; /* Firefox */
+        -webkit-animation: fadein 5s; /* Safari et Chrome */
+        -o-animation: fadein 5s; /* Opera */
+    }
+
+    .TitreCarte__CartePlats{
+        text-transform: uppercase;
+        animation: fadein 10s;
+        -moz-animation: fadein 10s; /* Firefox */
+        -webkit-animation: fadein 10s; /* Safari et Chrome */
+        -o-animation: fadein 10s; /* Opera */
+
+    }
+
+
+    .TitreCarte__CarteDesserts{
+        text-transform: uppercase;
+        animation: fadein 15s;
+        -moz-animation: fadein 15s; /* Firefox */
+        -webkit-animation: fadein 15s; /* Safari et Chrome */
+        -o-animation: fadein 15s; /* Opera */
     }
 
 
@@ -394,7 +414,7 @@
         
         font-weight: bold;
         grid-row: 2;
-        padding-left: 65%;
+        padding-left: 85%;
        
         
         
@@ -412,6 +432,7 @@
         background-color: white;
         @include Shadow;
         cursor: pointer;
+        overflow:hidden;
         
 
             .IconeCheck{
@@ -428,51 +449,115 @@
             width: 100%;
             grid-row: 1 /span 2;
             grid-column: 3;
-            -webkit-animation: tourne 5s ;
-            -moz-animation: tourne 5s ;
-            animation: tourne 5s ;
+            
+           
             
            
             }
     
-                        .IconeCheck:hover{opacity: 1;}
+            @-webkit-keyframes slide-in-right {
+                0% {
+                  -webkit-transform: translateX(1000px);
+                          transform: translateX(1000px);
+                  opacity: 0;
+                }
+                100% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+              @keyframes slide-in-right {
+                0% {
+                  -webkit-transform: translateX(1000px);
+                          transform: translateX(1000px);
+                  opacity: 0;
+                }
+                100% {
+                  -webkit-transform: translateX(0);
+                          transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+              
         
 
-                            }
+       }
+
+       .CarteMenu:hover > .IconeCheck {opacity: 1;
+        -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
 
 
-    @-webkit-keyframes tourne { 
-        0%  {
-         -webkit-transform: rotate(0deg);
-        
-        }
-                             
-        
-        100% {
+    .fa-check-circle{
+        -webkit-animation: tourne 4s;
+        -moz-animation: tourne 4s;
+        animation: tourne 4s;
       
-        -webkit-transform: rotate(360deg);
-        }
-        }
-    @-moz-keyframes tourne {
-    0% {
-     -moz-transform: rotate(0deg);
-                              }
-                              100% {
-                               
-                                -moz-transform: rotate(360deg);
-                              }
-                            }
-                            @keyframes tourne {
-                              0% {
-                                
-                                transform: rotate(0deg);
-                              }
-                              100% {
-                              
-                                transform: rotate(360deg);
-                              }
-                            }
+    }
 
+    @-webkit-keyframes tourne {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes tourne {
+        0% {
+          -moz-transform: rotate(0deg);
+        }
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @keyframes tourne {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      
+      
+      
+      @-webkit-keyframes tourne { 
+              0%  {
+               -webkit-transform: rotate(0deg);
+              
+              }
+                                   
+              
+              100% {
+            
+              -webkit-transform: rotate(360deg);
+              }
+              }
+          @-moz-keyframes tourne {
+          0% {
+           -moz-transform: rotate(0deg);
+                                    }
+                                    100% {
+                                     
+                                      -moz-transform: rotate(360deg);
+                                    }
+                                  }
+                                  @keyframes tourne {
+                                    0% {
+                                      
+                                      transform: rotate(0deg);
+                                    }
+                                    100% {
+                                    
+                                      transform: rotate(360deg);
+                                    }
+                                  }
+
+    
    
 
 
@@ -620,4 +705,4 @@
     .CarteRestaurants{
         margin-left: 0px;
     }
-    }
+   }
