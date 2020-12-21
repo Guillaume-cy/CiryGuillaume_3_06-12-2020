@@ -83,17 +83,17 @@ h5 {
 }
 
 /* Loc-Res */
-.IconeLoc {
+.localisation__icone {
   padding-right: 5%;
   padding-top: 15px;
 }
 
-.Ville {
+.localisation__ville {
   padding-top: 15px;
   font-weight: bold;
 }
 
-.Localisation {
+.localisation {
   display: flex;
   justify-content: center;
   background-color: #F9F9F9;
@@ -102,12 +102,12 @@ h5 {
   border-top: 1px solid gray;
 }
 
-.Reservation {
+.reservation {
   background-color: #F9F9F9;
   padding-bottom: 50px;
 }
 
-.Bouton {
+.bouton {
   display: block;
   margin: auto;
   border-radius: 20px;
@@ -121,22 +121,22 @@ h5 {
   height: 55px;
 }
 
-.TexteBoutonRecherche {
+.texte-bouton-recherche {
   font-size: 15px;
 }
 
-.CarteFonc {
+.carte-fonc {
   border-radius: 10px;
   background-color: #F9F9F9;
   box-shadow: 1px 1px 4px gray;
   display: flex;
-  width: 98%;
+  width: 100%;
   height: 70px;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.NombreFonc {
+.carte-fonc__nombre {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,23 +148,27 @@ h5 {
   margin-right: 10%;
 }
 
-.CarteFonc:hover {
+.carte-fonc:hover {
   background-color: #9356DC;
   background: #e4d5f6;
 }
 
-.IconeFonc {
+.carte-fonc:hover > .carte-fonc__icone {
   color: #9356DC;
+}
+
+.carte-fonc__icone {
+  color: black;
   margin-right: 10%;
 }
 
-.TexteFonc {
+.carte-fonc__texte {
   font-weight: bold;
   padding-left: 30px;
 }
 
 /*Restaurants*/
-.Restaurants {
+.restaurants {
   padding-left: 10px;
   background-color: #F9F9F9;
   height: auto;
@@ -172,7 +176,7 @@ h5 {
   margin-top: 50px;
 }
 
-.CarteRestaurants {
+.restaurants__carte {
   border-radius: 10px;
   background-color: #F9F9F9;
   box-shadow: 1px 1px 4px gray;
@@ -182,7 +186,7 @@ h5 {
   position: relative;
 }
 
-.TexteSuperieur {
+.restaurants__texte-superieur {
   position: absolute;
   z-index: 1;
   background: #99E2D0;
@@ -195,7 +199,7 @@ h5 {
   width: 20%;
 }
 
-.ImageRestaurants {
+.restaurants__images {
   flex-wrap: wrap;
   object-fit: cover;
   justify-self: center;
@@ -204,7 +208,7 @@ h5 {
   height: 200px;
 }
 
-.TitreImage {
+.restaurants__titre-image {
   font-size: 22px;
   font-weight: bold;
   padding-top: 10px;
@@ -212,78 +216,87 @@ h5 {
   display: block;
 }
 
-.IconeCoeur {
+.restaurants__icone-coeur {
   display: block;
   color: black;
   float: right;
   padding-right: 20px;
   padding-top: 20px;
 }
-.IconeCoeur :hover {
+.restaurants__icone-coeur :hover {
   background-color: #9356DC;
 }
 
-.ImageTexte {
+.restaurants__image-texte {
   padding-bottom: 20px;
   padding-top: 10px;
   padding-left: 15px;
 }
 
 /*Footer*/
-.Footer {
+.footer {
   background-color: #F9F9F9;
   background: #2d2d2d;
   color: white;
 }
-.Footer a {
+.footer a {
   color: white;
 }
 
-.Icone-Texte-Footer {
+.footer-icone-texte {
   display: flex;
   color: white;
   padding-bottom: 10px;
   padding-left: 15px;
 }
 
-.IconeFooter {
+.fotter__icone {
   padding-right: 10px;
   width: 20px;
 }
 
-.TexteFooter {
+.footer__texte {
   text-decoration: none;
   color: white;
 }
 
-.LienFooter {
+.footer__lien {
   padding-bottom: 10px;
   color: white;
   padding-left: 15px;
 }
 
 /* Page des restaurants*/
-.HeaderPages {
+.header-pages {
   display: flex;
 }
 
-.logo-titre {
+.header__logo {
   width: 100%;
 }
 
-.IconeArrow {
+.logo--restaurants {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-left: 23%;
+  padding-bottom: 20px;
+  padding-top: 2%;
+}
+
+.header__arrow {
   padding-left: 50px;
   padding-top: 2%;
   font-size: 50px;
   display: flex;
 }
 
-.EnTetePhoto {
+.en-tete__photo {
   display: block;
   margin: auto;
 }
 
-.ImageEnTete {
+.en-tete__image {
   flex-wrap: wrap;
   object-fit: cover;
   justify-self: center;
@@ -291,7 +304,7 @@ h5 {
   height: 300px;
 }
 
-.ChoixMenu {
+.choix-menu {
   background-color: #F9F9F9;
   padding-bottom: 100px;
   border-radius: 30px 30px 0px 0px;
@@ -325,7 +338,7 @@ h5 {
     opacity: 1;
   }
 }
-.TitreCarte__CarteEntrees {
+.titre-carte__carte-entrees {
   text-transform: uppercase;
   animation: fadein 5s;
   -moz-animation: fadein 5s;
@@ -336,7 +349,7 @@ h5 {
   /* Opera */
 }
 
-.TitreCarte__CartePlats {
+.titre-carte__carte-plats {
   text-transform: uppercase;
   animation: fadein 10s;
   -moz-animation: fadein 10s;
@@ -347,7 +360,7 @@ h5 {
   /* Opera */
 }
 
-.TitreCarte__CarteDesserts {
+.titre-carte__carte-desserts {
   text-transform: uppercase;
   animation: fadein 15s;
   -moz-animation: fadein 15s;
@@ -358,16 +371,16 @@ h5 {
   /* Opera */
 }
 
-.IconeCoeurMenu {
+.icone-coeur-menu {
   display: block;
   float: right;
   padding-right: 20px;
 }
-.IconeCoeurMenu :hover {
+.icone-coeur-menu :hover {
   color: #9356DC;
 }
 
-.TitreMenu {
+.carte-menu__menu {
   font-size: 22px;
   font-weight: bold;
   padding-top: 10px;
@@ -375,21 +388,21 @@ h5 {
   display: flex;
 }
 
-.MenuTexte {
+.carte-menu__texte {
   grid-column: 1;
   grid-row: 2;
   padding-left: 15px;
   padding-bottom: 10px;
 }
 
-.PrixMenu {
+.carte-menu__prix {
   font-weight: bold;
   grid-row: 2;
   padding-left: 80%;
   text-overflow: ellipsis;
 }
 
-.CarteMenu {
+.carte-menu {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -403,7 +416,7 @@ h5 {
   cursor: pointer;
   overflow: hidden;
 }
-.CarteMenu .IconeCheck {
+.carte-menu .carte-menu__icone-check {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,7 +453,7 @@ h5 {
   }
 }
 
-.CarteMenu:hover > .IconeCheck {
+.carte-menu:hover > .carte-menu__icone-check {
   opacity: 1;
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -500,7 +513,7 @@ h5 {
     transform: rotate(360deg);
   }
 }
-.BoutonCommander {
+.bouton-commander {
   display: block;
   margin: auto;
   border-radius: 20px;
@@ -515,62 +528,28 @@ h5 {
   height: 55px;
 }
 
-.FooterPages {
-  background-color: #F9F9F9;
-  background: #2d2d2d;
-  color: white;
-  position: relative;
-  top: -50px;
-}
-.FooterPages a {
-  color: white;
-}
-
-.Icone-Texte-Footer {
-  display: flex;
-  color: white;
-  padding-bottom: 10px;
-  padding-left: 15px;
-}
-
-.IconeFooter {
-  padding-right: 10px;
-  width: 20px;
-}
-
-.TexteFooter {
-  text-decoration: none;
-  color: white;
-}
-
-.LienFooter {
-  padding-bottom: 10px;
-  color: white;
-  padding-left: 15px;
-}
-
 @media all and (max-width: 2560px) {
   .container {
     max-width: 1200px;
   }
 
-  .Bouton {
+  .bouton {
     margin-top: 10px;
   }
 
-  .NombreFonc {
+  .carte-fonc__nombre {
     margin-right: 33%;
   }
 
-  .IconeFonc {
+  .carte-fonc__icone {
     margin-right: 5%;
   }
 
-  .TexteFonc {
+  .carte-fonc__texte {
     padding-left: 30px;
   }
 
-  .CarteRestaurants {
+  .restaurants__carte {
     margin-left: 7px;
   }
 }
@@ -579,7 +558,7 @@ h5 {
     max-width: 1200px;
   }
 
-  .Bouton {
+  .bouton {
     margin-top: 10px;
   }
 }
@@ -592,12 +571,17 @@ h5 {
     font-size: 30px;
   }
 
-  .Bouton {
+  .bouton {
     margin-top: 10px;
   }
 
-  .CarteRestaurants {
+  .restaurants__carte {
     margin-left: 2px;
+  }
+
+  .carte-menu__prix {
+    padding-left: 65%;
+    text-overflow: ellipsis;
   }
 }
 @media all and (max-width: 480px) {
@@ -605,28 +589,28 @@ h5 {
     max-width: 480px;
   }
 
-  .PrixMenu {
+  .carte-menu__prix {
     padding-left: 65%;
     text-overflow: ellipsis;
   }
 
-  .IconeArrow {
+  .header__arrow {
     font-size: 15px;
   }
 
-  .NombreFonc {
+  .carte-fonc__nombre {
     margin-right: 10%;
   }
 
-  .IconeFonc {
+  .carte-fonc__icone {
     margin-right: 10%;
   }
 
-  .TexteFonc {
+  .carte-fonc__texte {
     padding-left: 30px;
   }
 
-  .CarteRestaurants {
+  .restaurants__carte {
     margin-left: 0px;
   }
 }
