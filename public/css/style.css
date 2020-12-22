@@ -435,13 +435,29 @@ h5 {
   /* Opera */
 }
 
-.icone-coeur-menu {
-  display: block;
-  float: right;
-  padding-right: 20px;
+.coeur-animer--restau .coeur-acceuil--restau {
+  position: absolute;
+  margin-top: -16px;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  transition: opacity 1s ease-in;
 }
-.icone-coeur-menu :hover {
-  color: #9356DC;
+
+.coeur-animer--restau .restaurants__icone-coeur {
+  opacity: 1;
+}
+
+.restaurants__icone-coeur--hover {
+  color: #FF3CAC;
+  opacity: 0;
+}
+
+.coeur-animer--restau:hover .restaurants__icone-coeur {
+  opacity: 0;
+}
+
+.coeur-animer--restau:hover .restaurants__icone-coeur--hover {
+  opacity: 1;
 }
 
 .carte-menu__menu {

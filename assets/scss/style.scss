@@ -199,9 +199,9 @@
             margin-bottom: 20px;
             position: relative;
             animation: fadein 5s;
-        -moz-animation: fadein 5s; /* Firefox */
-        -webkit-animation: fadein 5s; /* Safari et Chrome */
-        -o-animation: fadein 5s; /* Opera */
+            -moz-animation: fadein 5s; /* Firefox */
+            -webkit-animation: fadein 5s; /* Safari et Chrome */
+            -o-animation: fadein 5s; /* Opera */
            
         }
 
@@ -454,15 +454,36 @@
         -o-animation: fadein 15s; /* Opera */
     }
 
-
-    .icone-coeur-menu{
-        display: block;
-            float: right;
-            padding-right: 20px;
-                & :hover{
-                    color: $couleur-violet;
-                }
+    .coeur-animer--restau .coeur-acceuil--restau{
+        position: absolute;
+            margin-top: -16px;
+            left: 90%;
+            transform: translate(-50%,-50%);
+            transition: opacity 1s ease-in;
     }
+
+    .coeur-animer--restau .restaurants__icone-coeur {
+        opacity: 1;     
+    }
+
+    .restaurants__icone-coeur--hover{
+        color: $couleur-bouton;
+        opacity: 0;
+    }
+
+
+
+
+
+    .coeur-animer--restau:hover .restaurants__icone-coeur{
+        opacity: 0;
+    }
+
+    .coeur-animer--restau:hover .restaurants__icone-coeur--hover{
+        opacity: 1;
+    }
+        
+    
 
     .carte-menu__menu{
     
