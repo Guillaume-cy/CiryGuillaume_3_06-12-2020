@@ -247,9 +247,8 @@
 
         .coeur-animer .coeur-acceuil{
             position: absolute;
-           
             margin-top: 30px;
-            padding-left: 180%;
+            left: 90%;
             transform: translate(-50%,-50%);
             transition: opacity 1s ease-in;
   
