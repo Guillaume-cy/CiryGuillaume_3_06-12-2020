@@ -106,8 +106,7 @@
                     background: darken($couleur-gris-clair, $amount: 10%);
             height: 50px;
             border-top: 1px solid gray;
-            
-
+      
         }
 
         .reservation{
@@ -118,9 +117,15 @@
         .bouton{
             @include Bouton;
             @include Shadow;
-            background-color: #C84FC2;
-            height: 55px
-    
+            background-color: $couleur-bouton;
+            background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
+            height: 55px;
+
+        }
+
+        .bouton:hover{
+            background: lighten($couleur-bouton, $amount: 5%);
+            box-shadow: 1px 1px 12px gray;
         }
 
         .texte-bouton-recherche{
@@ -181,6 +186,7 @@
             height: auto;
             padding-bottom: 50px;
             margin-top: 50px;
+            box-sizing: border-box;
            
         }
 
@@ -189,12 +195,13 @@
             @include Shadow;
             max-width: 98%;
             display: block;
+            box-sizing: border-box;
             margin-bottom: 20px;
             position: relative;
-            animation: fadein 15s;
-        -moz-animation: fadein 15s; /* Firefox */
-        -webkit-animation: fadein 15s; /* Safari et Chrome */
-        -o-animation: fadein 15s; /* Opera */
+            animation: fadein 5s;
+        -moz-animation: fadein 5s; /* Firefox */
+        -webkit-animation: fadein 5s; /* Safari et Chrome */
+        -o-animation: fadein 5s; /* Opera */
            
         }
 
@@ -227,33 +234,91 @@
             font-weight: bold;
             padding-top: 10px;
             padding-left: 15px;
-            display: block;
-            
+            display: block;   
         }
         
-        .restaurants__icone-coeur{
+
+        .coeur-animer{
+
             display: block;
-            color: black;
-            float: right;
-            padding-right: 20px;
-            padding-top: 20px;
-            
-                & :hover{
-                    background-color: $couleur-violet;
-                    
+            position: relative;
 
-
-                }
-              
-           
         }
 
+        .coeur-animer .coeur-acceuil{
+            position: absolute;
+           
+            margin-top: 30px;
+            padding-left: 180%;
+            transform: translate(-50%,-50%);
+            transition: opacity 1s ease-in;
+  
+        }
+
+
+        .coeur-animer .restaurants__icone-coeur {
+            opacity: 1;     
+        }
+
+        .restaurants__icone-coeur--hover{
+            color: $couleur-bouton;
+            opacity: 0;
+        }
+
+
+
+
+
+        .coeur-animer:hover .restaurants__icone-coeur{
+            opacity: 0;
+        }
+
+        .coeur-animer:hover .restaurants__icone-coeur--hover{
+            opacity: 1;
+        }
+        
         
 
         .restaurants__image-texte{
             padding-bottom: 20px;
             padding-top: 10px;
             padding-left: 15px;
+        }
+
+        .loader{
+            border: 5px solid black;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 1s linear infinite;
+            -o-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+            animation-iteration-count: 2;
+            margin: auto;
+            position:absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            
+         }
+      
+        @keyframes spin{
+                  0%{
+                      transform: rotate(0deg);
+                      opacity: 0;
+                  }
+      
+                  100%{
+                      transform: rotate(360deg);
+                      opacity: 1;
+                  }
+      
+      
+      
         }
     
     /*Footer*/
@@ -265,9 +330,6 @@
         a{
             color: white;
         }
-        
-       
-        
     }
 
     .footer-icone-texte{
@@ -299,7 +361,6 @@
 
     .header-pages{
         display: flex;
-        
     }
 
     .header__logo{
@@ -324,8 +385,6 @@
     .en-tete__photo{
         display: block;
         margin: auto;
-      
-      
     }
 
     .en-tete__image{
@@ -334,8 +393,6 @@
         justify-self: center;
         width: 100%;
         height: 300px;
-       
-        
     }
 
     .choix-menu{
@@ -415,8 +472,8 @@
         padding-top: 10px;
         padding-left: 15px;
         display: flex;
-        
-       
+        text-overflow: ellipsis;
+    
     }
 
     .carte-menu__texte{
@@ -424,6 +481,7 @@
         grid-row: 2;
         padding-left: 15px;
         padding-bottom: 10px;
+        text-overflow: ellipsis;
     }
 
    .carte-menu__prix{
@@ -448,10 +506,9 @@
         @include Shadow;
         cursor: pointer;
         overflow:hidden;
-        
+        text-overflow: ellipsis;
 
-            .carte-menu__icone-check{
-            
+            .carte-menu__icone-check{ 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -461,11 +518,7 @@
             background-color: $couleur-vert-clair;
             width: 100%;
             grid-row: 1 /span 2;
-            grid-column: 3;
-            
-           
-            
-           
+            grid-column: 3; 
             }
     
             @-webkit-keyframes slide-in-right {
@@ -492,9 +545,7 @@
                   opacity: 1;
                 }
               }
-              
-        
-
+ 
        }
 
        .carte-menu:hover > .carte-menu__icone-check {opacity: 1;
@@ -502,12 +553,10 @@
         animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
-
     .fa-check-circle{
         -webkit-animation: tourne 4s;
         -moz-animation: tourne 4s;
-        animation: tourne 4s;
-      
+        animation: tourne 4s; 
     }
 
     @-webkit-keyframes tourne {
@@ -534,10 +583,7 @@
           transform: rotate(360deg);
         }
       }
-      
-      
-      
-      
+    
       @-webkit-keyframes tourne { 
               0%  {
                -webkit-transform: rotate(0deg);
@@ -570,26 +616,19 @@
                                     }
                                   }
 
-    
-   
-
-
-
    .bouton-commander{
         @include Bouton;
         @include Shadow;
-        background-color: #C84FC2;
+        background-color: #FF3CAC;
+        background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
         margin-top: 50px;
         height: 55px
    }
-    
 
-
-   
-
-   
-
-   
+   .bouton-commander:hover{
+    background: lighten($couleur-bouton, $amount: 5%);
+    box-shadow: 1px 1px 12px gray;
+}
 
    @media all and (max-width: 2560px){
 
@@ -698,38 +737,4 @@
    }
 
 
-   .loader{
-      border: 10px solid black;
-      border-top: 10px solid white;
-      border-bottom: 10px solid white;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      -webkit-animation: spin 1.5s linear infinite;
-      -o-animation: spin 1.5s linear infinite;
-      animation: spin 1.5s linear infinite;
-
-      margin: auto;
-      position:absolute;
-      top: 100;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      opacity: 0;
-      animation-iteration-count: 5;
-   }
-
-   @keyframes spin{
-            0%{
-                transform: rotate(0deg);
-                opacity: 0;
-            }
-
-            100%{
-                transform: rotate(360deg);
-                opacity: 1;
-            }
-
-
-
-   }
+   

@@ -117,8 +117,14 @@ h5 {
   color: white;
   width: 40%;
   box-shadow: 1px 1px 4px gray;
-  background-color: #C84FC2;
+  background-color: #FF3CAC;
+  background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
   height: 55px;
+}
+
+.bouton:hover {
+  background: #ff56b7;
+  box-shadow: 1px 1px 12px gray;
 }
 
 .texte-bouton-recherche {
@@ -174,6 +180,7 @@ h5 {
   height: auto;
   padding-bottom: 50px;
   margin-top: 50px;
+  box-sizing: border-box;
 }
 
 .restaurants__carte {
@@ -182,14 +189,15 @@ h5 {
   box-shadow: 1px 1px 4px gray;
   max-width: 98%;
   display: block;
+  box-sizing: border-box;
   margin-bottom: 20px;
   position: relative;
-  animation: fadein 15s;
-  -moz-animation: fadein 15s;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
   /* Firefox */
-  -webkit-animation: fadein 15s;
+  -webkit-animation: fadein 5s;
   /* Safari et Chrome */
-  -o-animation: fadein 15s;
+  -o-animation: fadein 5s;
   /* Opera */
 }
 
@@ -223,15 +231,34 @@ h5 {
   display: block;
 }
 
-.restaurants__icone-coeur {
+.coeur-animer {
   display: block;
-  color: black;
-  float: right;
-  padding-right: 20px;
-  padding-top: 20px;
+  position: relative;
 }
-.restaurants__icone-coeur :hover {
-  background-color: #9356DC;
+
+.coeur-animer .coeur-acceuil {
+  position: absolute;
+  margin-top: 30px;
+  padding-left: 180%;
+  transform: translate(-50%, -50%);
+  transition: opacity 1s ease-in;
+}
+
+.coeur-animer .restaurants__icone-coeur {
+  opacity: 1;
+}
+
+.restaurants__icone-coeur--hover {
+  color: #FF3CAC;
+  opacity: 0;
+}
+
+.coeur-animer:hover .restaurants__icone-coeur {
+  opacity: 0;
+}
+
+.coeur-animer:hover .restaurants__icone-coeur--hover {
+  opacity: 1;
 }
 
 .restaurants__image-texte {
@@ -240,6 +267,36 @@ h5 {
   padding-left: 15px;
 }
 
+.loader {
+  border: 5px solid black;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  animation-iteration-count: 2;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 /*Footer*/
 .footer {
   background-color: #F9F9F9;
@@ -393,6 +450,7 @@ h5 {
   padding-top: 10px;
   padding-left: 15px;
   display: flex;
+  text-overflow: ellipsis;
 }
 
 .carte-menu__texte {
@@ -400,6 +458,7 @@ h5 {
   grid-row: 2;
   padding-left: 15px;
   padding-bottom: 10px;
+  text-overflow: ellipsis;
 }
 
 .carte-menu__prix {
@@ -422,6 +481,7 @@ h5 {
   box-shadow: 1px 1px 4px gray;
   cursor: pointer;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carte-menu .carte-menu__icone-check {
   display: flex;
@@ -530,9 +590,15 @@ h5 {
   color: white;
   width: 40%;
   box-shadow: 1px 1px 4px gray;
-  background-color: #C84FC2;
+  background-color: #FF3CAC;
+  background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
   margin-top: 50px;
   height: 55px;
+}
+
+.bouton-commander:hover {
+  background: #ff56b7;
+  box-shadow: 1px 1px 12px gray;
 }
 
 @media all and (max-width: 2560px) {
@@ -619,36 +685,6 @@ h5 {
 
   .restaurants__carte {
     margin-left: 0px;
-  }
-}
-.loader {
-  border: 10px solid black;
-  border-top: 10px solid white;
-  border-bottom: 10px solid white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  -webkit-animation: spin 1.5s linear infinite;
-  -o-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
-  margin: auto;
-  position: absolute;
-  top: 100;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  animation-iteration-count: 5;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 1;
   }
 }
 
