@@ -80,6 +80,8 @@ h5 {
   justify-content: center;
   padding-left: 23%;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Loc-Res */
@@ -120,6 +122,8 @@ h5 {
   background-color: #FF3CAC;
   background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
   height: 55px;
+  z-index: 1;
+  position: relative;
 }
 
 .bouton:hover {
@@ -129,6 +133,11 @@ h5 {
 
 .texte-bouton-recherche {
   font-size: 15px;
+}
+
+.fonctionnement {
+  position: relative;
+  z-index: 1;
 }
 
 .carte-fonc {
@@ -267,24 +276,62 @@ h5 {
   padding-left: 15px;
 }
 
+.attente {
+  z-index: 1;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-animation: bg-pan-left 3s 1 both;
+  animation: bg-pan-left 3s 1 both;
+}
+
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 0% 50%;
+    opacity: 0;
+  }
+}
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 0% 50%;
+    opacity: 0;
+  }
+}
 .loader {
   border: 5px solid black;
   border-top: 5px solid white;
   border-bottom: 5px solid white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: spin 1s linear infinite;
   -o-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
   animation-iteration-count: 2;
   margin: auto;
   position: absolute;
+  z-index: 2;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 10;
   left: 0;
   opacity: 0;
+  margin-top: 100px;
 }
 
 @keyframes spin {
