@@ -1,6 +1,8 @@
 @font-face {
   font-family: "roboto";
   src: url("/public/fonts/roboto/roboto-regular.ttf");
+}
+@font-face {
   font-family: "shrikhand";
   src: url("/public/fonts/shrikhand/shrikhand-regular.ttf");
 }
