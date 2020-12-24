@@ -1,14 +1,15 @@
 @font-face {
   font-family: "roboto";
-  src: url("/public/fonts/roboto/roboto-regular.ttf");
+  src: url("../fonts/roboto/roboto-regular.ttf");
 }
 @font-face {
   font-family: "shrikhand";
-  src: url("/CiryGuillaume_3_06-12-2020/public/fonts/shrikhand/shrikhand-regular.ttf");
+  src: url("../fonts/shrikhand/shrikhand-regular.ttf");
 }
 body {
   font-family: "roboto";
   box-sizing: content-box;
+  margin: 0px;
 }
 
 a {
