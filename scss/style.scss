@@ -1,0 +1,140 @@
+
+@import "./utils/mixins";
+@import './utils/variables';
+@import "./base/base";
+@import "./layouts/header";
+@import "./layouts/reservation";
+@import "./layouts/fonctionnement";
+@import "./layouts/restaurants";
+@import "./layouts/footer";
+@import "./pages/header-restaurants";
+@import "./pages/image-en-tete";
+@import "./pages/choix-des-menus";
+@import "./themes/fonts";
+
+
+
+
+    
+
+    
+
+    
+  /* responsive media */
+
+@media all and (max-width: 2560px){
+
+    .container{
+        max-width: 1200px;
+    }
+
+    .bouton{
+        margin-top: 10px;
+    }
+
+    .carte-fonc__nombre{
+        margin-right: 33%;
+    }
+
+    .carte-fonc__icone{
+        margin-right: 5%;
+    }
+
+    .carte-fonc__texte{
+        padding-left: 30px;
+    }
+   
+
+    .restaurants__carte{
+        margin-left: 7px;
+    }
+
+   }
+
+@media all and (max-width: 1440px){
+
+    .container{
+        max-width: 1200px;
+    }
+
+    .bouton{
+        margin-top: 10px;
+       
+    }
+
+   }
+
+@media all and (max-width: 768px){
+
+    .container{
+        max-width: 768px;
+    }
+
+    .IconeArrow{
+        
+        font-size: 30px;
+
+    }
+
+    .bouton{
+        margin-top: 10px;
+
+    }
+
+    .restaurants__carte{
+        margin-left: 2px;
+    }
+
+    .carte-menu__prix{
+        padding-left: 65%;
+        text-overflow: ellipsis;
+       
+   }
+
+    
+   }
+
+@media all and (max-width: 480px){
+
+    .container{
+        max-width: 480px;
+    }
+
+    .carte-menu__prix{
+        padding-left: 65%;
+        text-overflow: ellipsis;
+       
+   }
+
+    .header__arrow{  
+        font-size: 15px;
+    }
+
+    .carte-fonc__nombre{
+        margin-right: 10%;
+    }
+
+    .carte-fonc__icone{
+        margin-right: 10%;
+    }
+
+    .carte-fonc__texte{
+        padding-left: 30px;
+    }
+
+
+    .restaurants__carte{
+        margin-left: 0px;
+    }
+   }
+
+
+   
+ 
+    
+    
+
+   
+    
+   
+  

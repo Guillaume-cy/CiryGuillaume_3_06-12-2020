@@ -1,0 +1,70 @@
+body{
+        
+    font-family: "roboto";
+    box-sizing: content-box;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    margin: auto;
+    max-width: 480px;
+}
+
+p{
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "roboto";
+}
+
+h1{
+    margin: 0px; 
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: "shrikhand";
+}
+
+
+h2{
+    margin: 0px; 
+    padding-top: 20px;
+    text-align: center;
+    font-family: "roboto";
+    font-size: 24px;
+}
+
+h3{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: "roboto";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h4{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-family: "shrikhand";
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+    
+}
+
+h5{
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    font-family: "roboto";
+    font-weight: normal;
+    font-size: 24px;
+        @include H5Hover;
+        
+}

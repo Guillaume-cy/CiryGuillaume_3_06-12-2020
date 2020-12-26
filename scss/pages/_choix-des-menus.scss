@@ -1,0 +1,257 @@
+ /* choix des menus */
+
+ .choix-menu{
+    background-color: $couleur-gris-clair;
+    padding-bottom: 100px;
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+    top: -50px;
+  
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.titre-carte__carte-entrees{
+    text-transform: uppercase;
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari et Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+
+.titre-carte__carte-plats{
+    text-transform: uppercase;
+    animation: fadein 10s;
+    -moz-animation: fadein 10s; /* Firefox */
+    -webkit-animation: fadein 10s; /* Safari et Chrome */
+    -o-animation: fadein 10s; /* Opera */
+
+}
+
+
+.titre-carte__carte-desserts{
+    text-transform: uppercase;
+    animation: fadein 15s;
+    -moz-animation: fadein 15s; /* Firefox */
+    -webkit-animation: fadein 15s; /* Safari et Chrome */
+    -o-animation: fadein 15s; /* Opera */
+}
+
+.coeur-animer--restau .coeur-acceuil--restau{
+    position: absolute;
+        margin-top: -16px;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        transition: opacity 1s ease-in;
+}
+
+.coeur-animer--restau .restaurants__icone-coeur {
+    opacity: 1;     
+}
+
+.restaurants__icone-coeur--hover{
+    color: $couleur-bouton;
+    opacity: 0;
+}
+
+
+
+
+
+.coeur-animer--restau:hover .restaurants__icone-coeur{
+    opacity: 0;
+}
+
+.coeur-animer--restau:hover .restaurants__icone-coeur--hover{
+    opacity: 1;
+}
+    
+
+
+.carte-menu__menu{
+
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    text-overflow: ellipsis;
+
+}
+
+.carte-menu__texte{
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    text-overflow: ellipsis;
+}
+
+.carte-menu__prix{
+    
+    font-weight: bold;
+    grid-row: 2;
+    padding-left: 80%;
+    text-overflow: ellipsis;
+   
+}
+
+.carte-menu{      
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 93%; 
+    margin: auto;
+    margin-top: 20px;
+    border: 1px $couleur-gris-clair solid;
+    border-radius: 10px;
+    background-color: white;
+    @include Shadow;
+    cursor: pointer;
+    overflow:hidden;
+    text-overflow: ellipsis;
+
+        .carte-menu__icone-check{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        opacity: 0;    
+        color: white;
+        background-color: $couleur-vert-clair;
+        width: 100%;
+        grid-row: 1 /span 2;
+        grid-column: 3; 
+        }
+
+        @-webkit-keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @keyframes slide-in-right {
+            0% {
+              -webkit-transform: translateX(1000px);
+                      transform: translateX(1000px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-transform: translateX(0);
+                      transform: translateX(0);
+              opacity: 1;
+            }
+          }
+
+   }
+
+   .carte-menu:hover > .carte-menu__icone-check {opacity: 1;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.fa-check-circle{
+    -webkit-animation: tourne 4s;
+    -moz-animation: tourne 4s;
+    animation: tourne 4s; 
+}
+
+@-webkit-keyframes tourne {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes tourne {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @keyframes tourne {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes tourne { 
+          0%  {
+           -webkit-transform: rotate(0deg);
+          
+          }
+                               
+          
+          100% {
+        
+          -webkit-transform: rotate(360deg);
+          }
+          }
+      @-moz-keyframes tourne {
+      0% {
+       -moz-transform: rotate(0deg);
+                                }
+                                100% {
+                                 
+                                  -moz-transform: rotate(360deg);
+                                }
+                              }
+                              @keyframes tourne {
+                                0% {
+                                  
+                                  transform: rotate(0deg);
+                                }
+                                100% {
+                                
+                                  transform: rotate(360deg);
+                                }
+                              }
+
+.bouton-commander{
+    @include Bouton;
+    @include Shadow;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
+    margin-top: 50px;
+    height: 55px
+}
+
+.bouton-commander:hover{
+background: lighten($couleur-bouton, $amount: 5%);
+box-shadow: 1px 1px 12px gray;
+}

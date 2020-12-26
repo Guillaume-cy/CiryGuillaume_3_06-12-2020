@@ -1,15 +1,7 @@
-@font-face {
-  font-family: "roboto";
-  src: url("../fonts/roboto/roboto-regular.ttf");
-}
-@font-face {
-  font-family: "shrikhand";
-  src: url("../fonts/shrikhand/shrikhand-regular.ttf");
-}
 body {
   font-family: "roboto";
   box-sizing: content-box;
-  margin: 8px;
+  margin: 0px;
 }
 
 a {
@@ -87,7 +79,7 @@ h5 {
   z-index: 1;
 }
 
-/* Loc-Res */
+/* reservervation */
 .localisation__icone {
   padding-right: 5%;
   padding-top: 15px;
@@ -380,7 +372,7 @@ h5 {
   padding-left: 15px;
 }
 
-/* Page des restaurants*/
+/* header Page des restaurants*/
 .header-pages {
   display: flex;
 }
@@ -405,6 +397,7 @@ h5 {
   display: flex;
 }
 
+/* image en tete */
 .en-tete__photo {
   display: block;
   margin: auto;
@@ -418,6 +411,7 @@ h5 {
   height: 300px;
 }
 
+/* choix des menus */
 .choix-menu {
   background-color: #F9F9F9;
   padding-bottom: 100px;
@@ -667,6 +661,15 @@ h5 {
   box-shadow: 1px 1px 12px gray;
 }
 
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url("../fonts/shrikhand/shrikhand-regular.ttf");
+}
+/* responsive media */
 @media all and (max-width: 2560px) {
   .container {
     max-width: 1200px;

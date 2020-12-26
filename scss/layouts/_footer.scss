@@ -1,0 +1,34 @@
+/*Footer*/
+
+.footer{
+    background-color:$couleur-gris-clair;
+            background: darken($couleur-gris-clair, $amount: 80%);
+    color: white;
+    a{
+        color: white;
+    }
+}
+
+.footer-icone-texte{
+    display: flex;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.fotter__icone{
+    padding-right: 10px;
+    width: 20px;
+    
+}
+.footer__texte{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer__lien{
+    padding-bottom: 10px;
+    color: white;
+    padding-left: 15px;
+}

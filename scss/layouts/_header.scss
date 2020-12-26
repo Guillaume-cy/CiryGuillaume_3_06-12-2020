@@ -1,0 +1,10 @@
+/* Header */
+        
+
+.logo {
+    @include logo;
+    padding-left: 23%;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
