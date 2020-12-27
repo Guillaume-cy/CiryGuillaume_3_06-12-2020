@@ -87,26 +87,20 @@
         margin-left: 2px;
     }
 
-    .carte-menu__prix{
-        padding-left: 65%;
-        text-overflow: ellipsis;
-       
-   }
+    
 
     
    }
 
 @media all and (max-width: 480px){
 
+    
+
     .container{
         max-width: 480px;
     }
 
-    .carte-menu__prix{
-        padding-left: 65%;
-        text-overflow: ellipsis;
-       
-   }
+   
 
     .header__arrow{  
         font-size: 15px;
@@ -128,6 +122,17 @@
     .restaurants__carte{
         margin-left: 0px;
     }
+
+    .carte-menu__menu{
+        font-size: 19px;
+    }
+
+
+    .carte-menu__texte{
+        font-size: 14px;
+    }
+
+
    }
 
 
