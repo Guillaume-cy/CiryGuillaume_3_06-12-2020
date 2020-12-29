@@ -139,7 +139,7 @@
   height: 100%;
 }
 
-.carte-menu:hover > .carte-menu__prix {opacity: 1;
+.carte-menu:hover> .carte-menu__prix {opacity: 1;
   visibility: visible;
   transition: all .5s ease-in;
   transform: translateX(-100%);
@@ -176,23 +176,27 @@
         opacity: 0;    
         color: white;
         background-color: $couleur-vert-clair;
+              
         
        
         }
+}
 
-   }
-
-   .carte-menu:hover > .carte-menu__icone-check {opacity: 1;
+.carte-menu:hover> .carte-menu__icone-check 
+    {opacity: 1;
     visibility: visible;
     transition: all .5s ease-in;
     transform: translateX(-100%);
-}
+            & .fa-check-circle{
+              -webkit-animation: tourne 2s ;
+              -moz-animation: tourne 2s ;
+              animation: tourne 2s ; }
+    }
 
-.fa-check-circle{
-    -webkit-animation: tourne 4s ;
-    -moz-animation: tourne 4s ;
-    animation: tourne 4s ; 
-}
+
+
+
+
 
 @-webkit-keyframes tourne {
     0% {
