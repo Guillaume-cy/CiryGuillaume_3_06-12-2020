@@ -185,6 +185,9 @@ h5 {
   padding-bottom: 50px;
   margin-top: 50px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 100px 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .restaurants__carte {
@@ -205,7 +208,27 @@ h5 {
   /* Opera */
 }
 
-.restaurants__texte-superieur {
+.restau1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.restau2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.restau3 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.restau4 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.restaurants__badge {
   position: absolute;
   z-index: 1;
   background: #99E2D0;
@@ -227,7 +250,7 @@ h5 {
   height: 200px;
 }
 
-.restaurants__titre-image {
+.restaurants__nom {
   font-size: 22px;
   font-weight: bold;
   padding-top: 10px;
@@ -265,7 +288,7 @@ h5 {
   opacity: 1;
 }
 
-.restaurants__image-texte {
+.restaurants__lieu {
   padding-bottom: 20px;
   padding-top: 10px;
   padding-left: 15px;
@@ -370,6 +393,11 @@ h5 {
   padding-bottom: 10px;
   color: white;
   padding-left: 15px;
+}
+
+.--pages {
+  position: relative;
+  top: -50px;
 }
 
 /* header Page des restaurants*/
@@ -678,7 +706,12 @@ h5 {
   }
 
   .carte-fonc__nombre {
-    margin-right: 33%;
+    margin-right: 10%;
+  }
+
+  .carte-fonc {
+    margin-right: 7px;
+    margin-left: 7px;
   }
 
   .carte-fonc__icone {
@@ -692,6 +725,53 @@ h5 {
   .restaurants__carte {
     margin-left: 7px;
   }
+
+  .fonctionnement {
+    display: flex;
+  }
+
+  .restaurants {
+    display: grid;
+  }
+
+  .restaurants__carte {
+    margin-left: 0px;
+  }
+
+  .titre-carte__carte-entrees {
+    display: grid;
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titre-carte__carte-plats {
+    display: grid;
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .titre-carte__carte-desserts {
+    display: grid;
+    grid-template-rows: 70px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .plat1 {
+    grid-row: 2;
+  }
+
+  .plat2 {
+    grid-row: 2;
+  }
+
+  .plat3 {
+    grid-row: 3;
+  }
+
+  .plat4 {
+    grid-row: 3;
+    grid-column: 2;
+  }
 }
 @media all and (max-width: 1440px) {
   .container {
@@ -700,6 +780,28 @@ h5 {
 
   .bouton {
     margin-top: 10px;
+  }
+
+  .fonctionnement {
+    display: flex;
+  }
+
+  .restaurants {
+    display: grid;
+  }
+
+  .restaurants__carte {
+    margin-left: 0px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .restaurants {
+    display: grid;
+    padding-left: 0px;
+  }
+
+  .restaurants__carte {
+    margin-left: 5px;
   }
 }
 @media all and (max-width: 768px) {
@@ -715,8 +817,37 @@ h5 {
     margin-top: 10px;
   }
 
+  .carte-fonc {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
   .restaurants__carte {
     margin-left: 2px;
+  }
+
+  .fonctionnement {
+    display: block;
+  }
+
+  .restaurants {
+    display: block;
+  }
+
+  .restaurants__carte {
+    margin-left: 7px;
+  }
+
+  .titre-carte__carte-entrees {
+    display: block;
+  }
+
+  .titre-carte__carte-plats {
+    display: block;
+  }
+
+  .titre-carte__carte-desserts {
+    display: block;
   }
 }
 @media all and (max-width: 480px) {
@@ -750,6 +881,18 @@ h5 {
 
   .carte-menu__texte {
     font-size: 14px;
+  }
+
+  .fonctionnement {
+    display: block;
+  }
+
+  .restaurants {
+    display: block;
+  }
+
+  .restaurants__carte {
+    margin-left: 4px;
   }
 }
 

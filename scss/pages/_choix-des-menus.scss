@@ -40,7 +40,7 @@
     -moz-animation: fadein 5s; /* Firefox */
     -webkit-animation: fadein 5s; /* Safari et Chrome */
     -o-animation: fadein 5s; /* Opera */
-}
+}    
 
 .titre-carte__carte-plats{
     text-transform: uppercase;
@@ -189,9 +189,9 @@
 }
 
 .fa-check-circle{
-    -webkit-animation: tourne 4s;
-    -moz-animation: tourne 4s;
-    animation: tourne 4s; 
+    -webkit-animation: tourne 4s ;
+    -moz-animation: tourne 4s ;
+    animation: tourne 4s ; 
 }
 
 @-webkit-keyframes tourne {
