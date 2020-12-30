@@ -105,6 +105,7 @@ h5 {
 
   .restaurants {
     display: grid;
+    padding-left: 10px;
   }
 
   .restaurants__carte {
@@ -161,6 +162,7 @@ h5 {
 
   .restaurants {
     display: grid;
+    padding-left: 10px;
   }
 
   .restaurants__carte {
@@ -262,6 +264,7 @@ h5 {
 
   .restaurants {
     display: block;
+    padding-left: 0px;
   }
 
   .restaurants__carte {
@@ -379,13 +382,11 @@ h5 {
 
 /*Restaurants*/
 .restaurants {
-  padding-left: 10px;
   background-color: #F9F9F9;
   height: auto;
   padding-bottom: 50px;
   margin-top: 50px;
   box-sizing: border-box;
-  display: grid;
   grid-template-rows: 100px 2fr 2fr;
   grid-template-columns: 1fr 1fr;
 }
