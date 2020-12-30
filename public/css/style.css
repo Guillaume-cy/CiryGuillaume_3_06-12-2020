@@ -271,6 +271,14 @@ h5 {
     margin-left: 4px;
   }
 }
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto/roboto-regular.ttf");
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url("../fonts/shrikhand/shrikhand-regular.ttf");
+}
 /* Header */
 .logo {
   width: 50%;
@@ -885,15 +893,6 @@ h5 {
 .bouton-commander:hover {
   background: #ff56b7;
   box-shadow: 1px 1px 12px gray;
-}
-
-@font-face {
-  font-family: "roboto";
-  src: url("../fonts/roboto/roboto-regular.ttf");
-}
-@font-face {
-  font-family: "shrikhand";
-  src: url("../fonts/shrikhand/shrikhand-regular.ttf");
 }
 
 /*# sourceMappingURL=style.css.map */

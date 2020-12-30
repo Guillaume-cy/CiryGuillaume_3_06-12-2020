@@ -2,6 +2,7 @@
 @import "./utils/mixins";
 @import './utils/variables';
 @import "./base/base";
+@import "./base/fonts";
 @import "./layouts/header";
 @import "./layouts/reservation";
 @import "./layouts/fonctionnement";
@@ -10,6 +11,5 @@
 @import "./pages/header-restaurants";
 @import "./pages/image-en-tete";
 @import "./pages/choix-des-menus";
-@import "./themes/fonts";
 @import "./components/components";
 @import "./vendors/vendors";
