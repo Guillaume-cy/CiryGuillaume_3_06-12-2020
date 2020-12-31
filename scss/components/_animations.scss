@@ -1,0 +1,122 @@
+/* animation ecran d'acceuil */ 
+
+@-webkit-keyframes bg-pan-left {
+    0% {
+      background-position: 100% 50%;
+      opacity: 1;
+    }
+    100% {
+      background-position: 0% 50%;
+      opacity: 0;
+    }
+  }
+  @keyframes bg-pan-left {
+    0% {
+      background-position: 100% 50%;
+      opacity: 1;
+    }
+    100% {
+      background-position: 0% 50%;
+      opacity: 0;
+    }
+  }
+  
+
+/* animation loader */ 
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+  }
+
+  /* animation fondu d'apparition */ 
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+  /* animation rotation icone */ 
+
+  @-webkit-keyframes tourne {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes tourne {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @keyframes tourne {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes tourne { 
+          0%  {
+           -webkit-transform: rotate(0deg);
+          
+          }
+                               
+          
+          100% {
+        
+          -webkit-transform: rotate(360deg);
+          }
+          }
+      @-moz-keyframes tourne {
+      0% {
+       -moz-transform: rotate(0deg);
+                                }
+                                100% {
+                                 
+                                  -moz-transform: rotate(360deg);
+                                }
+                              }
+                              @keyframes tourne {
+                                0% {
+                                  
+                                  transform: rotate(0deg);
+                                }
+                                100% {
+                                
+                                  transform: rotate(360deg);
+                                }
+                              }

@@ -1,0 +1,92 @@
+/* reservervation */
+
+.localisation__icone{
+    padding-right: 5%;
+    padding-top: 15px;
+}
+.localisation__ville{
+    padding-top: 15px;
+    font-weight: bold; 
+}
+
+.localisation{
+    display: flex;
+    justify-content: center;
+    background-color:$couleur-gris-clair;
+            background: darken($couleur-gris-clair, $amount: 10%);
+    height: 50px;
+    border-top: 1px solid gray;  
+}
+
+.reservation{
+    background-color:$couleur-gris-clair;          
+    padding-bottom: 50px; 
+}
+
+/* partie fonctionnement */ 
+
+.fonctionnement{
+    position: relative;
+    z-index: 1;
+}
+
+.carte-fonc__nombre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px $couleur-violet;
+    color: white;
+    background-color: $couleur-violet;
+    border-radius: 50px;
+    width: 20px;
+    margin-right: 10%;  
+}
+
+.carte-fonc__icone{
+    color:black;
+    margin-right: 10%;       
+}
+
+.carte-fonc__texte{
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+/* partie choix des restaurants */ 
+
+.restaurants{
+    background-color: $couleur-gris-clair;
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: 50px;   
+    box-sizing: border-box;
+    grid-template-rows: 100px 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.restaurants__images{
+    flex-wrap: wrap;
+    object-fit: cover;
+    justify-self: center;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 200px;
+}
+
+.restaurants__nom{
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 15px;
+    display: block;   
+}
+
+.restaurants__lieu{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+
+
+
