@@ -38,10 +38,9 @@
     height: 300px;
 }
 
- 
- /* choix des menus */
+/* choix des menus */
 
- .choix-menu{
+.choix-menu{
     background-color: $couleur-gris-clair;
     padding-bottom: 100px;
     border-radius: 30px 30px 0px 0px;
@@ -89,23 +88,23 @@
 }
 
 .carte-menu__texte{
-  display: block;
-  justify-content: space-between;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+    display: block;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .carte-menu__prix{
-  font-weight: bold;
-  display: flex;
-  text-overflow: ellipsis;
-  align-items: center;
-  justify-content: center;
-  position:absolute;
-  top: 0;
-  left: 85%;
-  width: 20%;
-  height: 100%;
+    font-weight: bold;
+    display: flex;
+    text-overflow: ellipsis;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: 0;
+    left: 85%;
+    width: 20%;
+    height: 100%;
 }
