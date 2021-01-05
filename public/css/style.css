@@ -1,6 +1,6 @@
 body {
   font-family: "roboto";
-  box-sizing: content-box;
+  box-sizing: border-box;
   margin: 0px;
 }
 
@@ -74,8 +74,16 @@ h5 {
     max-width: 1200px;
   }
 
+  .header__arrow {
+    font-size: 40px;
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 10px;
+  }
+
   .bouton {
     margin-top: 10px;
+    width: 13%;
   }
 
   .carte-fonc__nombre {
@@ -154,6 +162,7 @@ h5 {
 
   .bouton {
     margin-top: 10px;
+    width: 20%;
   }
 
   .fonctionnement {
@@ -178,6 +187,10 @@ h5 {
   .restaurants__carte {
     margin-left: 5px;
   }
+
+  .bouton {
+    width: 25%;
+  }
 }
 @media all and (max-width: 768px) {
   .container {
@@ -188,8 +201,16 @@ h5 {
     font-size: 30px;
   }
 
+  .header__arrow {
+    font-size: 40px;
+    position: absolute;
+    padding-left: 100px;
+    padding-top: 10px;
+  }
+
   .bouton {
     margin-top: 10px;
+    width: 35%;
   }
 
   .carte-fonc {
@@ -231,7 +252,17 @@ h5 {
   }
 
   .header__arrow {
-    font-size: 15px;
+    font-size: 20px;
+    padding-left: 10%;
+  }
+
+  .bouton {
+    width: 60%;
+  }
+
+  .logo--restaurants {
+    max-width: 55%;
+    padding-left: 23%;
   }
 
   .carte-fonc__nombre {
@@ -287,6 +318,7 @@ h5 {
 }
 
 .logo {
+  max-width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -294,6 +326,7 @@ h5 {
 /* header Page des restaurants*/
 .header-pages {
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .header__logo {
@@ -302,9 +335,7 @@ h5 {
 }
 
 .header__arrow {
-  font-size: 40px;
   position: absolute;
-  padding-left: 100px;
   padding-top: 10px;
 }
 
@@ -373,8 +404,7 @@ h5 {
 
 /* partie fonctionnement */
 .fonctionnement {
-  position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .carte-fonc__nombre {
@@ -411,6 +441,7 @@ h5 {
   box-sizing: border-box;
   grid-template-rows: 100px 2fr 2fr;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .restaurants__images {
@@ -536,13 +567,11 @@ h5 {
   border: none;
   font-family: "roboto";
   color: white;
-  width: 40%;
   box-shadow: 1px 1px 4px gray;
   background-color: #FF3CAC;
   background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
   height: 55px;
-  z-index: 1;
-  position: relative;
+  z-index: 0;
 }
 
 .bouton:hover {
@@ -563,12 +592,12 @@ h5 {
   border: none;
   font-family: "roboto";
   color: white;
-  width: 40%;
   box-shadow: 1px 1px 4px gray;
   background-color: #FF3CAC;
   background-image: linear-gradient(174deg, #FF3CAC 0%, #784BA0 90%, #b72bc5 100%);
   margin-top: 50px;
   height: 55px;
+  width: 40%;
 }
 
 .bouton-commander:hover {
@@ -709,19 +738,23 @@ h5 {
 
 /* ecran chargement pas d'acceuil */
 .attente {
-  z-index: 1;
-  position: absolute;
+  position: fixed;
   background-color: black;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 9999;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0;
-  -webkit-animation: bg-pan-left 3s 1 both;
-  animation: bg-pan-left 3s 1 both;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .loader {
@@ -734,16 +767,8 @@ h5 {
   -webkit-animation: spin 1s linear infinite;
   -o-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
-  animation-iteration-count: 2;
+  animation-iteration-count: 3;
   margin: auto;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  bottom: 10px;
-  left: 0;
-  opacity: 0;
-  margin-top: 100px;
 }
 
 /* carte menu des pages "menu restaurants" */
@@ -798,24 +823,24 @@ h5 {
 }
 
 /* animation ecran d'acceuil */
-@-webkit-keyframes bg-pan-left {
+@-webkit-keyframes fadeOutDown {
   0% {
-    background-position: 100% 50%;
     opacity: 1;
   }
   100% {
-    background-position: 0% 50%;
     opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 }
-@keyframes bg-pan-left {
+@keyframes fadeOutDown {
   0% {
-    background-position: 100% 50%;
     opacity: 1;
   }
   100% {
-    background-position: 0% 50%;
     opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
   }
 }
 /* animation loader */

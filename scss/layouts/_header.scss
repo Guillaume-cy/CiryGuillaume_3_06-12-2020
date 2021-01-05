@@ -3,12 +3,13 @@
 .logo-titre{
     @include logo;
     padding-bottom: 20px;
+    
 }
 
 
 
 .logo {
-   
+    max-width: 100%;
     position: relative;
     z-index: 1;
 }
@@ -17,22 +18,20 @@
 /* header Page des restaurants*/
 
 .header-pages{
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
 }
 
 .header__logo{
     @include logo;
-}
-
-.logo--restaurants{
     
-       
 }
 
 .header__arrow{
-    font-size: 40px;
+
     position: absolute;
-    padding-left: 100px;
+
     padding-top: 10px;
     
 }

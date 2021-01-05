@@ -26,8 +26,8 @@
 /* partie fonctionnement */ 
 
 .fonctionnement{
-    position: relative;
-    z-index: 1;
+   
+    z-index: 0;
 }
 
 .carte-fonc__nombre{
@@ -66,6 +66,7 @@
     box-sizing: border-box;
     grid-template-rows: 100px 2fr 2fr;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .restaurants__images{

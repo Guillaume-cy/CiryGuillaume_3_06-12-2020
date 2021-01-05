@@ -1,7 +1,7 @@
 body{
         
     font-family: "roboto";
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0px;
 }
 
@@ -79,8 +79,17 @@ h5{
         max-width: 1200px;
     }
 
+    .header__arrow{
+        font-size: 40px;
+        position: absolute;
+        padding-left: 100px;
+        padding-top: 10px;
+        
+    }
+
     .bouton{
         margin-top: 10px;
+        width: 13%;
     }
 
     .carte-fonc__nombre{
@@ -168,6 +177,7 @@ h5{
 
     .bouton{
         margin-top: 10px;
+        width: 20%;
        
     }
 
@@ -201,6 +211,10 @@ h5{
         margin-left: 5px;
     }
 
+    .bouton{
+        width: 25%;
+    }
+
     
 }
     
@@ -221,8 +235,17 @@ h5{
 
     }
 
+    .header__arrow{
+        font-size: 40px;
+        position: absolute;
+        padding-left: 100px;
+        padding-top: 10px;
+        
+    }
+
     .bouton{
         margin-top: 10px;
+        width: 35%;
 
     }
 
@@ -274,8 +297,19 @@ h5{
    
 
     .header__arrow{  
-        font-size: 15px;
+        font-size: 20px;
+        padding-left: 10%;
     }
+
+    .bouton{
+        width: 60%;
+    }
+
+    .logo--restaurants{
+        max-width: 55%;
+        padding-left: 23%;
+    }
+
 
     .carte-fonc__nombre{
         margin-right: 10%;

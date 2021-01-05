@@ -1,24 +1,24 @@
 /* animation ecran d'acceuil */ 
 
-@-webkit-keyframes bg-pan-left {
-    0% {
-      background-position: 100% 50%;
-      opacity: 1;
-    }
-    100% {
-      background-position: 0% 50%;
-      opacity: 0;
-    }
+@-webkit-keyframes fadeOutDown {
+  0% {
+  opacity: 1;
   }
-  @keyframes bg-pan-left {
-    0% {
-      background-position: 100% 50%;
-      opacity: 1;
-    }
-    100% {
-      background-position: 0% 50%;
-      opacity: 0;
-    }
+  100% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+  }
+  @keyframes fadeOutDown {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
   }
   
 
