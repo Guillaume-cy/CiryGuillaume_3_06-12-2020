@@ -237,6 +237,7 @@ box-shadow: 1px 1px 12px gray;
     cursor: pointer;
     overflow:hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     text-transform: none;
     
         .carte-menu__icone-check{ 
@@ -279,3 +280,11 @@ box-shadow: 1px 1px 12px gray;
     transition: all .5s ease-in;
     transform: translateX(-100%);
     }
+
+.carte-menu:hover> .carte-menu__menu{
+    width: 60%;
+}
+
+.carte-menu:hover> .carte-menu__texte{
+    width: 60%;
+}
